@@ -1,0 +1,307 @@
+/* ini ncss */
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav > a {
+    display: inline-block; /* Membuat elemen rapi secara horizontal */
+    border:none; /* Border dengan warna abu-abu lembut */
+    padding: 8px 16px; /* Padding atas/bawah dan kiri/kanan */
+    margin: 5px; /* Jarak antar tautan */
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #333; /* Warna teks */
+    font-size: 16px; /* Ukuran teks */
+    font-family: Arial, sans-serif; /* Font yang sederhana dan rapi */
+    border-radius: 4px; /* Membuat sudut membulat */
+    background-color: #f9f9f9; /* Warna latar belakang yang lembut */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Efek transisi */
+}
+
+nav > a:hover {
+    transform: scale(1); /* Membesarkan tombol saat hover */
+    background-color: #007bff; /* Warna latar belakang saat hover */
+    color: #fff; /* Ubah warna teks menjadi putih saat hover */
+    border-color: #007bff; /* Sesuaikan warna border saat hover */
+}
+
+
+
+.home-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.banner-img {
+    max-width: 100%;
+    height: 450px;
+    background-image: url(https://picsum.photos/750);
+    background-size: center;
+    background-position: center;
+   
+}
+
+.banner-1 {
+    background-image: url(https://picsum.photos/720);
+    display: none;
+}
+
+.banner-2 {
+    background-image: url(https://picsum.photos/720);
+    display: block;
+}
+
+ .banner-3 {
+    background-image: url(https://picsum.photos/720);
+    display: none;
+ }
+
+.content-header{
+    text-align: center;
+}
+
+.main-container{
+    display: flex;
+    gap: 24px;
+  justify-content: space-around;
+}
+
+form {
+    width: 90%; /* Lebar penuh pada perangkat kecil */
+    max-width: 400px; /* Lebar maksimum form */
+    padding: 20px; /* Padding dalam form */
+    background: white; /* Warna latar belakang form */
+    border-radius: 8px; /* Sudut form melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    box-sizing: border-box; /* Menghitung padding dalam lebar */
+  }
+
+.main-item {
+    flex : 1;
+    display: block;
+    align-items: center; 
+    width: 90px; 
+    justify-content: center;
+    margin: 10px;
+    background-color: aliceblue;
+    text-align: left; /* Tidak ada properti align-content di konteks ini */
+    padding: 10px; /* Tambahkan padding agar lebih nyaman */
+    border-radius: 8px; /* Sudut melengkung untuk estetika */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek */
+  }
+  
+  label {
+    width: 90%;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 5px; /* Jarak atas dan bawah lebih konsisten */
+    color: black;
+  }
+  
+  input {
+    width: 90%; /* Lebar penuh input */
+    padding: 8px; /* Padding lebih besar untuk kenyamanan */
+    font-size: 14px; /* Ukuran font lebih besar */
+    border: 2px solid #ccc; /* Warna border */
+    border-radius: 5px; /* Sudut melengkung */
+    background-color: rgb(240, 248, 255); /* Warna latar belakang */
+    box-sizing: border-box; /* Memastikan padding dihitung dalam lebar */
+    margin-bottom: 10px; /* Jarak bawah antar elemen input */
+ 
+  }
+  
+  select {
+    width: 90%; /* Membuat dropdown menyesuaikan lebar parent */
+    padding: 8px;
+    margin-bottom: 10px; /* Jarak bawah antar elemen form */
+    border: 1px solid #ccc; /* Warna border netral */
+    border-radius: 5px;
+    font-size: 14px; /* Konsisten dengan input */
+    background-color: #f9f9f9; /* Warna latar belakang dropdown */
+  }
+  
+  button {
+    width: 90%; /* Memastikan tombol memenuhi lebar form */
+    margin-top: 20px;
+    position: relative;
+    padding: 10px; /* Padding tombol */
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px; /* Sedikit lebih besar untuk tombol */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Efek transisi */
+  }
+  
+  button:hover {
+    background: #0056b3; /* Warna saat tombol di-hover */
+  }
+  
+  /* Tambahan untuk menghindari kesalahan penulisan */
+  .bottom:hover {
+    background: #0056b3;
+  }
+  p {
+    margin-top: 5px;
+    margin-left: 0px;
+    font-style: italic;
+    text-align: left;
+    height: 15vh;
+}
+  
+.our-packages-header{
+    background-color: aliceblue ;
+    margin-top: 24px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.our-packages-header p {
+    margin-top: 5px;
+    margin-left: 50px;
+    font-style: italic;
+    text-align: left;
+    height: 15vh;
+}
+.info {
+    font-size: x-large;
+    margin: 10px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.user-info {
+    text-align: left; /* Memastikan teks rata kiri */
+    margin-left: 50px;
+    font-size: 16px; /* Ukuran font standar */
+    margin: 10px; /* Memberikan jarak di sekeliling */
+    margin-bottom: 50px;
+    background-size: 40px;
+}
+
+.user-info i {
+    font-size: 20px; /* Ukuran ikon */
+    color: #333; /* Warna ikon lebih gelap */
+    margin-right: 10px; /* Memberikan jarak antara ikon dan teks */
+}
+
+.user-info b {
+    font-size: 18px; /* Ukuran font untuk nama */
+    font-weight: bold; /* Nama tebal */
+    color: #333; /* Warna teks nama */
+    margin-left: 10px;
+}
+
+.user-info .occupation {
+    font-size: 14px; /* Ukuran font untuk pekerjaan */
+    font-style: italic; /* Gaya miring untuk pekerjaan */
+    color: #666; /* Warna teks pekerjaan */
+    margin-top: 5px; /* Memberikan sedikit jarak di atas pekerjaan */
+    margin-left: 50px;
+}
+
+
+  footer {
+    background-color: #f9f9f9; /* Warna latar belakang footer */
+    padding: 10px; /* Jarak dalam footer */
+    text-align: center; /* Pusatkan konten dalam footer */
+  }
+  
+  .footer-list {
+    list-style: none; /* Hilangkan bullet pada list */
+    display: flex; /* Gunakan flexbox untuk tata letak */
+    flex-direction: column; /* Susun elemen secara vertikal */
+    justify-content: center; /* Pusatkan daftar secara vertikal */
+    align-items: center; /* Rata tengah secara horizontal */
+    gap: 20px; /* Jarak antar item */
+    padding: 0; /* Hilangkan padding default */
+    margin: 0; /* Hilangkan margin default */
+  }
+  
+  .footer-item {
+    display:flex; /* Flex untuk menyusun gambar dan teks secara vertikal */
+    flex-direction: column; /* Susun secara vertikal */
+    align-items: center; /* Rata tengah secara horizontal */
+  }
+  
+  .footer-item img {
+    width: 400px; /* Lebar gambar */
+    height: 200px; /* Tinggi gambar */
+    border-radius: 10px; /* Membuat sudut gambar membulat */
+    object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+    margin-bottom: 8px; /* Jarak antara gambar dan teks */
+    border: 2px solid #007bff; /* Tambahkan border */
+    transition: transform 0.3s ease; /* Efek transisi yang halus */
+}
+
+.footer-item img:hover {
+    transform: scale(1.1); /* Membesarkan gambar saat hover */
+}
+
+  
+  .footer-item span {
+    font-size: 14px; /* Ukuran font teks */
+    color: #333; /* Warna teks */
+    font-weight: bold; /* Tebalkan teks */
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .sosmed p {
+    font-size: 24px; /* Ukuran font untuk "Ikuti Kami" */
+    color: #080505; /* Warna teks */
+    text-align: center;
+    margin: 12px ; /* Atur jarak atas dan bawah */
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif; /* Gaya font */
+    font-style: normal;
+}
+
+.sosmed {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sosmed a {
+    margin: 5px; /* Kurangi jarak antar ikon */
+    text-decoration: none; /* Hilangkan garis bawah pada tautan */
+}
+
+.sosmed img {
+    transition: transform 0.3s ease; /* Efek transisi untuk hover */
+    width: 40px; /* Ukuran ikon */
+    height: 40px;
+}
+
+.sosmed img:hover {
+    transform: scale(1.2); /* Membesarkan ikon saat hover */
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-container {
+        flex-direction: column;
+    }
+    form {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
